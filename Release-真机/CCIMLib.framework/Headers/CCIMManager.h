@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^CCRequestCallback)(BOOL result, NSError * _Nonnull error);
+typedef void(^CCRequestCallbackWithData)(BOOL result, id _Nullable data, NSError * _Nullable error);
 
 @protocol CCIMManagerDelegate <NSObject>
 
@@ -44,7 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param token token
 /// @param userId 客户端id
 /// @param classId 课程id
-- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId;
+/// @param callBack 回调函数
+- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId callBack:(CCRequestCallback)callBack;
 
 ///发布了需要存储消息时使用
 - (void)setClassId:(NSString *)classId;
@@ -74,6 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 添加observer
 /// @param observer 代理对象
 - (void)removeOnIMListener:(id<CCIMManagerDelegate>)observer;
+
+/// 获取历史消息
+/// @param classId 课程id
+/// @param callBack 回调函数
+- (void)getHistoryMessage:(NSString *)classId callBack:(CCRequestCallbackWithData)callBack;
 
 @end
 
