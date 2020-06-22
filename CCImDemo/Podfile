@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target:’CCImDemo’ do
+pod 'HDIMLib' ,'~> 0.1.2'
+
+end

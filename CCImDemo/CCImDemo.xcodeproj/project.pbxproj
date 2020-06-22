@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41C637F18595B6776975E377 /* libPods-CCImDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF93E253E858CF4F6303E8 /* libPods-CCImDemo.a */; };
+		492B72A324A0AA6D004B580F /* CCIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492B72A124A0AA35004B580F /* CCIMLib.framework */; };
+		492B72A424A0AA6D004B580F /* CCIMLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 492B72A124A0AA35004B580F /* CCIMLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		495D850224862045002749ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D850124862045002749ED /* AppDelegate.m */; };
+		495D850524862045002749ED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D850424862045002749ED /* SceneDelegate.m */; };
+		495D850824862045002749ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D850724862045002749ED /* ViewController.m */; };
+		495D850B24862045002749ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495D850924862045002749ED /* Main.storyboard */; };
+		495D850D2486204B002749ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495D850C2486204B002749ED /* Assets.xcassets */; };
+		495D85102486204B002749ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495D850E2486204B002749ED /* LaunchScreen.storyboard */; };
+		495D85132486204B002749ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D85122486204B002749ED /* main.m */; };
+		495D851D2486204B002749ED /* CCImDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D851C2486204B002749ED /* CCImDemoTests.m */; };
+		495D85282486204C002749ED /* CCImDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D85272486204C002749ED /* CCImDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495D85192486204B002749ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495D84F524862045002749ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495D84FC24862045002749ED;
+			remoteInfo = CCImDemo;
+		};
+		495D85242486204C002749ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495D84F524862045002749ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495D84FC24862045002749ED;
+			remoteInfo = CCImDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		499EF7C624874A8A004337AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				492B72A424A0AA6D004B580F /* CCIMLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1BE3CC45A8354364142F1F8B /* Pods-CCImDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCImDemo.debug.xcconfig"; path = "Target Support Files/Pods-CCImDemo/Pods-CCImDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		492B72A124A0AA35004B580F /* CCIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CCIMLib.framework; sourceTree = "<group>"; };
+		495D84FD24862045002749ED /* CCImDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCImDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495D850024862045002749ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		495D850124862045002749ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		495D850324862045002749ED /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		495D850424862045002749ED /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		495D850624862045002749ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		495D850724862045002749ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		495D850A24862045002749ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		495D850C2486204B002749ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		495D850F2486204B002749ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		495D85112486204B002749ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495D85122486204B002749ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495D85182486204B002749ED /* CCImDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCImDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495D851C2486204B002749ED /* CCImDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCImDemoTests.m; sourceTree = "<group>"; };
+		495D851E2486204B002749ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495D85232486204C002749ED /* CCImDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCImDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495D85272486204C002749ED /* CCImDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCImDemoUITests.m; sourceTree = "<group>"; };
+		495D85292486204C002749ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499EF7BC2487498B004337AA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		499EF7BE24874992004337AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		499EF7C024874998004337AA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		499EF7C2248749A3004337AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F65E11D83510CD02758CF6A /* Pods-CCImDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCImDemo.release.xcconfig"; path = "Target Support Files/Pods-CCImDemo/Pods-CCImDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B6CF93E253E858CF4F6303E8 /* libPods-CCImDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCImDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495D84FA24862045002749ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492B72A324A0AA6D004B580F /* CCIMLib.framework in Frameworks */,
+				41C637F18595B6776975E377 /* libPods-CCImDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D85152486204B002749ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D85202486204B002749ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BB8589E749B1941453AD45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3CC45A8354364142F1F8B /* Pods-CCImDemo.debug.xcconfig */,
+				4F65E11D83510CD02758CF6A /* Pods-CCImDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		495D84F424862045002749ED = {
+			isa = PBXGroup;
+			children = (
+				495D84FF24862045002749ED /* CCImDemo */,
+				495D851B2486204B002749ED /* CCImDemoTests */,
+				495D85262486204C002749ED /* CCImDemoUITests */,
+				495D84FE24862045002749ED /* Products */,
+				499EF7BB2487498B004337AA /* Frameworks */,
+				04BB8589E749B1941453AD45 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		495D84FE24862045002749ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495D84FD24862045002749ED /* CCImDemo.app */,
+				495D85182486204B002749ED /* CCImDemoTests.xctest */,
+				495D85232486204C002749ED /* CCImDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495D84FF24862045002749ED /* CCImDemo */ = {
+			isa = PBXGroup;
+			children = (
+				492B72A124A0AA35004B580F /* CCIMLib.framework */,
+				495D850024862045002749ED /* AppDelegate.h */,
+				495D850124862045002749ED /* AppDelegate.m */,
+				495D850324862045002749ED /* SceneDelegate.h */,
+				495D850424862045002749ED /* SceneDelegate.m */,
+				495D850624862045002749ED /* ViewController.h */,
+				495D850724862045002749ED /* ViewController.m */,
+				495D850924862045002749ED /* Main.storyboard */,
+				495D850C2486204B002749ED /* Assets.xcassets */,
+				495D850E2486204B002749ED /* LaunchScreen.storyboard */,
+				495D85112486204B002749ED /* Info.plist */,
+				495D85122486204B002749ED /* main.m */,
+			);
+			path = CCImDemo;
+			sourceTree = "<group>";
+		};
+		495D851B2486204B002749ED /* CCImDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				495D851C2486204B002749ED /* CCImDemoTests.m */,
+				495D851E2486204B002749ED /* Info.plist */,
+			);
+			path = CCImDemoTests;
+			sourceTree = "<group>";
+		};
+		495D85262486204C002749ED /* CCImDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				495D85272486204C002749ED /* CCImDemoUITests.m */,
+				495D85292486204C002749ED /* Info.plist */,
+			);
+			path = CCImDemoUITests;
+			sourceTree = "<group>";
+		};
+		499EF7BB2487498B004337AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				499EF7C2248749A3004337AA /* Foundation.framework */,
+				499EF7C024874998004337AA /* Security.framework */,
+				499EF7BE24874992004337AA /* CFNetwork.framework */,
+				499EF7BC2487498B004337AA /* libicucore.tbd */,
+				B6CF93E253E858CF4F6303E8 /* libPods-CCImDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495D84FC24862045002749ED /* CCImDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495D852C2486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemo" */;
+			buildPhases = (
+				DB930071558589875B301ABD /* [CP] Check Pods Manifest.lock */,
+				495D84F924862045002749ED /* Sources */,
+				495D84FA24862045002749ED /* Frameworks */,
+				495D84FB24862045002749ED /* Resources */,
+				499EF7C624874A8A004337AA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCImDemo;
+			productName = CCImDemo;
+			productReference = 495D84FD24862045002749ED /* CCImDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495D85172486204B002749ED /* CCImDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495D852F2486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemoTests" */;
+			buildPhases = (
+				495D85142486204B002749ED /* Sources */,
+				495D85152486204B002749ED /* Frameworks */,
+				495D85162486204B002749ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495D851A2486204B002749ED /* PBXTargetDependency */,
+			);
+			name = CCImDemoTests;
+			productName = CCImDemoTests;
+			productReference = 495D85182486204B002749ED /* CCImDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		495D85222486204B002749ED /* CCImDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495D85322486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemoUITests" */;
+			buildPhases = (
+				495D851F2486204B002749ED /* Sources */,
+				495D85202486204B002749ED /* Frameworks */,
+				495D85212486204B002749ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495D85252486204C002749ED /* PBXTargetDependency */,
+			);
+			name = CCImDemoUITests;
+			productName = CCImDemoUITests;
+			productReference = 495D85232486204C002749ED /* CCImDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495D84F524862045002749ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "刘强强";
+				TargetAttributes = {
+					495D84FC24862045002749ED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					495D85172486204B002749ED = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 495D84FC24862045002749ED;
+					};
+					495D85222486204B002749ED = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 495D84FC24862045002749ED;
+					};
+				};
+			};
+			buildConfigurationList = 495D84F824862045002749ED /* Build configuration list for PBXProject "CCImDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 495D84F424862045002749ED;
+			productRefGroup = 495D84FE24862045002749ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495D84FC24862045002749ED /* CCImDemo */,
+				495D85172486204B002749ED /* CCImDemoTests */,
+				495D85222486204B002749ED /* CCImDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495D84FB24862045002749ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D85102486204B002749ED /* LaunchScreen.storyboard in Resources */,
+				495D850D2486204B002749ED /* Assets.xcassets in Resources */,
+				495D850B24862045002749ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D85162486204B002749ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D85212486204B002749ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB930071558589875B301ABD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCImDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495D84F924862045002749ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D850824862045002749ED /* ViewController.m in Sources */,
+				495D850224862045002749ED /* AppDelegate.m in Sources */,
+				495D85132486204B002749ED /* main.m in Sources */,
+				495D850524862045002749ED /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D85142486204B002749ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D851D2486204B002749ED /* CCImDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495D851F2486204B002749ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D85282486204C002749ED /* CCImDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495D851A2486204B002749ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495D84FC24862045002749ED /* CCImDemo */;
+			targetProxy = 495D85192486204B002749ED /* PBXContainerItemProxy */;
+		};
+		495D85252486204C002749ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495D84FC24862045002749ED /* CCImDemo */;
+			targetProxy = 495D85242486204C002749ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495D850924862045002749ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495D850A24862045002749ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		495D850E2486204B002749ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495D850F2486204B002749ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495D852A2486204C002749ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		495D852B2486204C002749ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495D852D2486204C002749ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE3CC45A8354364142F1F8B /* Pods-CCImDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CCImDemo",
+				);
+				INFOPLIST_FILE = CCImDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		495D852E2486204C002749ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F65E11D83510CD02758CF6A /* Pods-CCImDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CCImDemo",
+				);
+				INFOPLIST_FILE = CCImDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		495D85302486204C002749ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				INFOPLIST_FILE = CCImDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCImDemo.app/CCImDemo";
+			};
+			name = Debug;
+		};
+		495D85312486204C002749ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				INFOPLIST_FILE = CCImDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCImDemo.app/CCImDemo";
+			};
+			name = Release;
+		};
+		495D85332486204C002749ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				INFOPLIST_FILE = CCImDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCImDemo;
+			};
+			name = Debug;
+		};
+		495D85342486204C002749ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39TBB43S2R;
+				INFOPLIST_FILE = CCImDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqq.CCImDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCImDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495D84F824862045002749ED /* Build configuration list for PBXProject "CCImDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495D852A2486204C002749ED /* Debug */,
+				495D852B2486204C002749ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495D852C2486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495D852D2486204C002749ED /* Debug */,
+				495D852E2486204C002749ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495D852F2486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495D85302486204C002749ED /* Debug */,
+				495D85312486204C002749ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495D85322486204C002749ED /* Build configuration list for PBXNativeTarget "CCImDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495D85332486204C002749ED /* Debug */,
+				495D85342486204C002749ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 495D84F524862045002749ED /* Project object */;
+}

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void(^CCRequestCallback)(BOOL result, NSError * _Nonnull error);
+typedef void(^CCRequestCallback)(BOOL result, NSError * _Nullable error);
 typedef void(^CCRequestCallbackWithData)(BOOL result, id _Nullable data, NSError * _Nullable error);
 
 @protocol CCIMManagerDelegate <NSObject>
@@ -45,8 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param token token
 /// @param userId 客户端id
 /// @param classId 课程id
+/// @param userName 用户名 option
+/// @param clientVersion 客户端版本
 /// @param callBack 回调函数
-- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId callBack:(CCRequestCallback)callBack;
+- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId userName:(NSString *)userName clientVersion:(NSString *)clientVersion callBack:(CCRequestCallbackWithData)callBack;
 
 ///发布了需要存储消息时使用
 - (void)setClassId:(NSString *)classId;
@@ -79,8 +81,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 获取历史消息
 /// @param classId 课程id
+/// @param types 可传半角逗号隔开的多个值，不传则返回所有 type
 /// @param callBack 回调函数
-- (void)getHistoryMessage:(NSString *)classId callBack:(CCRequestCallbackWithData)callBack;
+- (void)getHistoryMessage:(NSString *)classId types:(NSString *)types callBack:(CCRequestCallbackWithData)callBack;
 
 @end
 
