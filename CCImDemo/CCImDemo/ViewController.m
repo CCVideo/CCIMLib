@@ -79,7 +79,7 @@
 }
 
 - (void)socketBtnAction {
-    [[CCIMManager sharedIMManager] initCCIM:@"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3d3dy5ib2tlY2MuY29tLyIsInN1YiI6ImFjdGlvbnNreSIsImV4cCI6MTU5Mjg4MTkwMiwiY3VzdE5hbWUiOiJhY3Rpb25za3kiLCJjdXN0SWQiOiI1OTM4RjA0N0U1RjU2MkYwIiwicm9vbUlkIjoiNjY2NyJ9.svsvEI0w1PRUTe_5pgHY2ad9aW25zATuexcNKpigEBw" userId:@"lqq" classId:@"ccc" userName:@"" clientVersion:@"1.1.0" callBack:^(BOOL result, id  _Nullable data, NSError * _Nullable error) {
+    [[CCIMManager sharedIMManager] initCCIM:@"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3d3dy5ib2tlY2MuY29tLyIsInN1YiI6ImFjdGlvbnNreSIsImV4cCI6MTU5Mjg4MTkwMiwiY3VzdE5hbWUiOiJhY3Rpb25za3kiLCJjdXN0SWQiOiI1OTM4RjA0N0U1RjU2MkYwIiwicm9vbUlkIjoiNjY2NyJ9.svsvEI0w1PRUTe_5pgHY2ad9aW25zATuexcNKpigEBw" userId:@"lqq" classId:@"ccc" userName:@""  callBack:^(BOOL result, id  _Nullable data, NSError * _Nullable error) {
         
         NSLog(@"===initCCIM==%@  %@", error, data);
         self.textView.text = [NSString stringWithFormat:@"%@%@", data, error];

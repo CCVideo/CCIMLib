@@ -43,12 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 初始化房间信息并连接socket
 /// @param token token
-/// @param userId 客户端id
+/// @param userId 用户id
 /// @param classId 课程id
 /// @param userName 用户名 option
-/// @param clientVersion 客户端版本
 /// @param callBack 回调函数
-- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId userName:(NSString *)userName clientVersion:(NSString *)clientVersion callBack:(CCRequestCallbackWithData)callBack;
+- (void)initCCIM:(NSString *)token userId:(NSString *)userId classId:(NSString *)classId userName:(NSString *)userName callBack:(CCRequestCallbackWithData)callBack;
 
 ///发布了需要存储消息时使用
 - (void)setClassId:(NSString *)classId;
